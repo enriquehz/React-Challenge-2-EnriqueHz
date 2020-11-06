@@ -2,17 +2,12 @@ import React from "react";
 //import { mockPokemonsData } from "../mock/pokeData";
 
 //console.log(mockPokemonsData);
-let PokemonData = {
-  name: "charizard",
-  sprites: Object,
-  videoLink: "https://www.youtube.com/watch?v=evvO5Gcl-mo"
-};
 
-function PokeCard(PokemonData) {
-  let pokemonName = PokemonData.name;
-  let spriteDefault = PokemonData.sprites.front_default;
-  let spriteShiny = PokemonData.sprites.front_shiny;
-  let pokemonVideo = PokemonData.video;
+function PokeCard(props) {
+  //let pokemonName = props.name;
+  //let spriteDefault = props.sprites.front_default;
+  //let spriteShiny = props.sprites.front_shiny;
+  //let pokemonVideo = props.video;
 
   /*
   let pokemonName = mockPokemonsData[0].name;
@@ -23,14 +18,14 @@ function PokeCard(PokemonData) {
 
   return (
     <div>
-      <h1> {pokemonName} </h1>
+      <h1> {props.pokemonName} </h1>
       <p>
-        <img src={spriteDefault} alt="Default" />
+        <img src={props.spriteDefault} alt="Default" />
       </p>
       <p>
-        <img src={spriteShiny} alt="Shiny" />
+        <img src={props.spriteShiny} alt="Shiny" />
       </p>
-      <a href={pokemonVideo}>{pokemonName} video</a>
+      <a href={props.pokemonVideo}>{props.pokemonName} video</a>
     </div>
   );
 }
