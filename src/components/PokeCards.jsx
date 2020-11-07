@@ -15,8 +15,8 @@ items.forEach((item, index) => {
   itemList.push(
     <PokeCard
       pokemonName={item.name}
-      spriteDefault={item.sprites.front_default}
-      spriteShiny={item.sprites.front_shiny}
+      spriteDefault={item.sprites.front_default || item.sprites.back_default}
+      spriteShiny={item.sprites.front_shiny || item.sprites.back_shiny}
       pokemonVideo={item.videoLink}
     />
   );
