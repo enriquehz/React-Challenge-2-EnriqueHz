@@ -53,4 +53,15 @@ const zangoose = {
   videoLink: "https://www.youtube.com/watch?v=k7T9STO48ZQ"
 };
 
-export const mockPokemonsData = [charizard, ditto, claydol, solrock, zangoose];
+const squirtle = {
+  name: "squirtle",
+  sprites: {
+    front_default:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    front_shiny:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png"
+  },
+  videoLink: "https://www.youtube.com/watch?v=T71dXmb2ClU"
+};
+
+export const mockPokemonsData = [charizard, ditto, claydol, solrock, zangoose, squirtle];
