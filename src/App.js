@@ -6,7 +6,7 @@ import "./styles.css";
 export default function App() {
   return (
     <div className="App">
-      <h1>2o. Challenge: Loops</h1>
+      <h1>PokeCards Challenge #2 Enrique Hz</h1>
       <PokeCards />
     </div>
   );

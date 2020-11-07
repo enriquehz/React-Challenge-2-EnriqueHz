@@ -10,9 +10,9 @@ console.log(pokeName);
 
 //const listItems = items.map((item) => item);
 
-let itemList = [];
+let pokeCardsList = [];
 items.forEach((item, index) => {
-  itemList.push(
+  pokeCardsList.push(
     <PokeCard
       pokemonName={item.name}
       spriteDefault={item.sprites.front_default || item.sprites.back_default}
@@ -22,9 +22,9 @@ items.forEach((item, index) => {
   );
 });
 
-console.log(itemList);
+console.log(pokeCardsList);
 function PokeCards() {
-  return <div>{itemList}</div>;
+  return <div>{pokeCardsList}</div>;
 }
 
 export default PokeCards;
