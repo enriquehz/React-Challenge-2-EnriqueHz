@@ -14,6 +14,7 @@ let pokeCardsList = [];
 items.forEach((item, index) => {
   pokeCardsList.push(
     <PokeCard
+      key={item.name}
       pokemonName={item.name}
       spriteDefault={item.sprites.front_default || item.sprites.back_default}
       spriteShiny={item.sprites.front_shiny || item.sprites.back_shiny}
